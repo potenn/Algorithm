@@ -29,7 +29,7 @@ public class Main {
 			for(int bagSize = 1 ; bagSize <= size ; bagSize++){
 
 				if(bagSize >= wt){
-          //compare include current Item to not included currentItem
+					//compare include current Item to not included currentItem
 					dp[i][bagSize] = Math.max(dp[i-1][bagSize], dp[i-1][bagSize-weight[i]] + values[i]);
 				}
 				else{
